@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo IP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    
+</head>
+<body>
+    <main class="container">
+        <form id="form">
+            <label>
+                IP del usuario
+                <input required id="input" type="text" placeholder="Introduce aqui la IP">
+                <small>Por ejemplo: 54.85.132.205</small>
+            </label>
+            <!-- Por defecto el boton sera de tipo submit, pero si no quieres que esa asi debes poner type="button"-->
+            <button type="submit" id="submit">
+                Buscar la información de esta IP
+            </button>
+        </form>
+        <div>
+            <!--Pre es una caja para mostrar en formato codigo-->
+            <pre id="results">
+
+            </pre>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
